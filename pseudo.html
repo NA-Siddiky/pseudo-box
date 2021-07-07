@@ -30,6 +30,37 @@
         a:visited {
             color: red;
         }
+
+        li {
+            color: chocolate;
+        }
+
+        li:first-child {
+            color: darkorchid
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        li:nth-child(2n) {
+            border: 1px solid black;
+
+        }
+
+        h3::before {
+            content: "Hello ";
+        }
+
+        h3::after {
+            content: "--gelo";
+            background-color: red;
+            font-size: 20px;
+        }
+
+        .special::after {
+            font-size: 30px
+        }
     </style>
 </head>
 
@@ -43,6 +74,22 @@
     <a href="www.google.com">google</a>
     <a href="www.google.com">google</a>
     <a href="https://en.wikipedia.org/wiki/Brand">Brand new</a>
+    <br>
+    <h3>middlesizeheader -1</h3>
+    <h3>middlesizeheader -2</h3>
+    <h3 class="special">middlesizeheader -3</h3>
+    <h3>middlesizeheader -4</h3>
+    <h3>middlesizeheader -5</h3>
+    <h3 class="special">middlesizeheader -6</h3>
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>kalia</li>
+        <li>jalia</li>
+        <li>palia</li>
+        <li>khalia</li>
+    </ul>
+
 </body>
 
 </html>
